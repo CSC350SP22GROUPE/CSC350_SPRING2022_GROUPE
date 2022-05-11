@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>  laundry option </title>
+<script>
+function validate()
+{
+if(document.getElementById("UNIT").value == '')
+	{
+		alert("UNIT FIELD IS EMPTY");
+		return false;
+	}
+	else
+		if(document.getElementById("Password").value == '')
+		{
+			alert("Password FIELD IS EMPTY");
+			return false;
+		}
+if(document.getElementById("DATE").value == '')
+           {
+              alert("DATE FIELD IS EMPTY");
+             return false;
+           }
+             
+                       else
+                          return true;
+}
+
+function check()
+{
+if ()
+}
+
+</script>
+<style>
+body{background-color:lightblue}
+input[type="text"]{border:solid 3px red;}
+td,th{border:solid 3px black;}
+</style>
+</head>
+
+<body>
+<form action = "laundry.php" method ="post" onsubmit="return validate();">
+
+<h1 style="background:yellow;">PLEASE SELECTED YOUR LAUNDRY SLOT </h1>
+<table>
+<tr><td>UNIT</td><td><input type="text" name="UNIT" id="UNIT"></td></tr>
+<tr><td>Password</td><td><input type="text" name="Password" id="Password"></td></tr>
+<tr><td>DATE</td>
+<td>
+
+<tr><td><input type="radio"name = "DATE" id = "DATE" value="MONDAY 12am-3am"> MONDAY 12am-3am </td>
+<td><input type="radio"  name = "DATE" id = "DATE"  value="MONDAY 3am-6am">  MONDAY 3am-6am </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="MONDAY 6am-9am">  MONDAY 6am-9am </td>
+<td><input type="radio"  name = "DATE" id = "DATE"  value="MONDAY 9am-12pm"> MONDAY 9am-12pm </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="MONDAY 12pm-3pm"> MONDAY 12pm-3pm </td>
+<td><input type="radio"  name = "DATE" id = "DATE"  value="MONDAY 3pm-6pm">  MONDAY 3pm-6pm </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="MONDAY 6pm-9pm">  MONDAY 6pm-9pm </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="MONDAY 9pm-12am"> MONDAY 9pm-12am </td></tr>
+
+<tr><td><input type="radio" name = "DATE" id = "DATE"  value="TUESDAY 12am-3am"> TUESDAY 12am-3am </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="TUESDAY 3am-6am">  TUESDAY 3am-6am </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="TUESDAY 6am-9am">  TUESDAY 6am-9am </td>
+<td><input type="radio" name = "DATE" id = "DATE"  value="TUESDAY 9am-12pm"> TUESDAY 9am-12pm </td>
+<td><input type="radio" name = "DATE" id = "DATE"  value="TUESDAY 12pm-3pm"> TUESDAY 12pm-3pm </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="TUESDAY 3pm-6pm">  TUESDAY 3pm-6pm </td>
+<td><input type="radio" name = "DATE" id = "DATE"  value="TUESDAY 6pm-9pm">  TUESDAY 6pm-9pm </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="TUESDAY 9pm-12am"> TUESDAY 9pm-12am </td></tr>
+
+
+<tr><td><input type="radio" name = "DATE" id = "DATE"   value="WEDNESDAY 12am-3am"> WEDNESDAY 12am-3am </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="WEDNESDAY 3am-6am">  WEDNESDAY 3am-6am </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="WEDNESDAY 6am-9am">  WEDNESDAY 6am-9am </td>
+<td><input type="radio" name = "DATE" id = "DATE"  value="WEDNESDAY 9am-12pm"> WEDNESDAY 9am-12pm </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="WEDNESDAY 12pm-3pm"> WEDNESDAY 12pm-3pm </td>
+<td><input type="radio" name = "DATE" id = "DATE"  value="WEDNESDAY 3pm-6pm">  WEDNESDAY 3pm-6pm </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="WEDNESDAY 6pm-9pm">  WEDNESDAY 6pm-9pm </td>
+<td><input type="radio"  name = "DATE" id = "DATE" value="WEDNESDAY 9pm-12am"> WEDNESDAY 9pm-12am </td></tr>
+
+<tr><td><input type="radio" name = "DATE" id = "DATE"  value="THURSDAY 12am-3am"> THURSDAY 12am-3am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="THURSDAY 3am-6am">  THURSDAY 3am-6am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="THURSDAY 6am-9am">  THURSDAY 6am-9am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="THURSDAY 9am-12pm"> THURSDAY 9am-12pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="THURSDAY 12pm-3pm"> THURSDAY 12pm-3pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="THURSDAY 3pm-6pm">  THURSDAY 3pm-6pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="THURSDAY 6pm-9pm">  THURSDAY 6pm-9pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="THURSDAY 9pm-12am"> THURSDAY 9pm-12am </td></tr>
+
+<tr><td><input type="radio" name = "DATE" id = "DATE"  value="FRIDAY 12am-3am"> FRIDAY 12am-3am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="FRIDAY 3am-6am">  FRIDAY 3am-6am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="FRIDAY 6am-9am">  FRIDAY 6am-9am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="FRIDAY 9am-12pm"> FRIDAY 9am-12pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="FRIDAY 12pm-3pm"> FRIDAY 12pm-3pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="FRIDAY 3pm-6pm">  FRIDAY 3pm-6pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="FRIDAY 6pm-9pm">  FRIDAY 6pm-9pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="FRIDAY 9pm-12am"> FRIDAY 9pm-12am </td></tr>
+
+<tr><td><input type="radio" name = "DATE" id = "DATE" value="SATURDAY 12am-3am"> SATURDAY 12am-3am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SATURDAY 3am-6am">  SATURDAY 3am-6am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SATURDAY 6am-9am">  SATURDAY 6am-9am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SATURDAY 9am-12pm"> SATURDAY 9am-12pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SATURDAY 12pm-3pm"> SATURDAY 12pm-3pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SATURDAY 3pm-6pm">  SATURDAY 3pm-6pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SATURDAY 6pm-9pm">  SATURDAY 6pm-9pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SATURDAY 9pm-12am"> SATURDAY 9pm-12am </td></tr>
+
+<tr><td><input type="radio" name = "DATE" id = "DATE"  value="SUNDAY 12am-3am"> SUNDAY 12am-3am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SUNDAY 3am-6am">  SUNDAY 3am-6am </td>
+<td><input type="radio" name = "DATE" id = "DATE"  value="SUNDAY 6am-9am">  SUNDAY 6am-9am </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SUNDAY 9am-12pm"> SUNDAY 9am-12pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SUNDAY 12pm-3pm"> SUNDAY 12pm-3pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SUNDAY 3pm-6pm">  SUNDAY 3pm-6pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SUNDAY 6pm-9pm">  SUNDAY 6pm-9pm </td>
+<td><input type="radio" name = "DATE" id = "DATE" value="SUNDAY 9pm-12am"> SUNDAY 9pm-12am </td></tr>
+</td></tr>
+</form>
+<tr colspan = "2"><td><input type ="submit" value = "SUBMIT"></td> <td><input type ="reset" value = "CLEAR"></td></tr>
+</table>
+
+</body>
+</html>
