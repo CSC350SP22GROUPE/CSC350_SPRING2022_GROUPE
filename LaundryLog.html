@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+body {background-color: lightblue;}
+</style>
+<script>
+
+function validate()
+{
+    if(document.getElementById("ApartNumber").value == '')
+	{
+		alert("ApartmentNumber FIELD IS EMPTY");
+		return false;
+	}
+	else
+	if(document.getElementById("username").value == '')
+	{
+		alert("username FIELD IS EMPTY");
+		return false;
+	}
+	else
+	if(document.getElementById("password").value == ''){
+	   alert(" password IS EMPTY");
+	    return false;
+	   }
+	  else
+	  if(document.getElementById("EmailAddress").value == '')
+	{
+		alert("Email FIELD IS EMPTY");
+		return false;
+	}
+	else
+	    return true;
+}
+</script>
+</head>
+<body>
+<form action="signup.php" method="post" onsubmit="return validate();">
+<table>
+<tr><td>ApartNumber</td><td><input type="text" name="ApartNumber" id="ApartNumber"></td></tr>
+<tr><td>username</td><td><input type="text" name="username" id="username"></td></tr>
+<tr><td>Password</td><td><input type="text" name="Password" id="Password"></td></tr>
+<tr><td>EmailAddress</td><td><input type="text" name="EmailAddress" id="EmailAddress"></td></tr>
+<tr colspan = "2"><td><input type="submit" value="Sign up"></td></tr>
+</table>
+</form>
+</body>
+</html>
