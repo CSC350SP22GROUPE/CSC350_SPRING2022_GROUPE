@@ -1,0 +1,54 @@
+<html>
+<head>
+<style>
+
+</style>
+<script>
+
+function validate()
+{
+    if(document.getElementById("ApartNumber").value == '')
+	{
+		alert("ApartmentNumber FIELD IS EMPTY");
+		return false;
+	}
+	else
+	if(document.getElementById("username").value == '')
+	{
+		alert("username FIELD IS EMPTY");
+		return false;
+	}
+	else
+	if(document.getElementById("password").value == ''){
+	   alert(" password IS EMPTY");
+	    return false;
+	   }
+	  else
+	  if(document.getElementById("EmailAddress").value == '')
+	{
+		alert("Email FIELD IS EMPTY");
+		return false;
+	}
+	else
+	    return true;
+}
+</script>
+</head>
+
+<body background = "clothes.jpg">
+<table>
+<tr><td align='center'>
+<form  action="signup.php" method="post" onsubmit="return validate();">
+<br>
+<br>
+<br>
+<br>
+<tr><td align='center'>ApartNumber</td><td><input type="text" name="ApartNumber" id="ApartNumber"><br></td></tr>
+<tr><td align='center'>username</td><td><input type="text" name="username" id="username"><br></td></tr>
+<tr><td align='center'>Password</td><td><input type="text" name="Password" id="Password"><br></td></tr>
+<tr><td align='center'>EmailAddress</td><td><input type="text" name="EmailAddress" id="EmailAddress"><br></td></tr>
+<tr colspan = "2"><td align='center'><input type="submit" value="Sign up"></td></tr>
+</table>
+</form>
+</body>
+</html>
